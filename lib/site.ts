@@ -1,6 +1,18 @@
+// Prefer an explicit env var (set this once a custom domain is live).
+// Otherwise fall back to Vercel's auto-injected deployment URL so
+// previews and the production deployment always resolve to a real,
+// reachable host instead of a placeholder domain.
+const vercelUrl =
+  process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL;
+
+const resolvedUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (vercelUrl ? `https://${vercelUrl}` : undefined) ??
+  "http://localhost:3000";
+
 export const siteConfig = {
   name: "Fudo Greentech",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://fudogreentech.com",
+  url: resolvedUrl,
   description:
     "Fudo Greentech is a full-service growth partner handling marketing, branding, software development, and go-to-market strategy end to end.",
   email: "hello@fudogreentech.com",
