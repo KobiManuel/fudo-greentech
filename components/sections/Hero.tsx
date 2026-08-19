@@ -30,9 +30,9 @@ export function Hero() {
 
         <Reveal delay={0.16} className="mt-5 max-w-xl">
           <p className="text-base leading-relaxed text-ink/60 sm:text-lg">
-            Fudo Greentech is the full-service partner behind brands that
-            need marketing, identity, product, and launch strategy to move
-            as one thing, not four separate vendors.
+            Fudo Greentech builds the software great brands run on, then
+            backs it with the identity, marketing, and launch strategy to
+            take it to market as one thing, not four separate vendors.
           </p>
         </Reveal>
 
