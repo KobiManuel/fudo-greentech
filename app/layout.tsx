@@ -18,7 +18,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 const title = {
-  default: "Fudo Greentech: Marketing, Branding & Product, End to End",
+  default: "Fudo Greentech: Software, Branding & Marketing, End to End",
   template: "%s | Fudo Greentech",
 };
 
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
   title,
   description: siteConfig.description,
   keywords: [
-    "marketing agency",
-    "branding agency",
-    "go-to-market strategy",
     "software development agency",
+    "branding agency",
+    "marketing agency",
+    "go-to-market strategy",
     "full-service growth partner",
     "Fudo Greentech",
-    "Lagos marketing agency",
+    "Lagos software agency",
   ],
   authors: [{ name: "Fudo Greentech" }],
   creator: "Fudo Greentech",

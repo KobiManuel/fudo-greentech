@@ -20,7 +20,7 @@ export const siteConfig = {
   url: resolvedUrl,
   vercelUrl: KNOWN_VERCEL_URL,
   description:
-    "Fudo Greentech is a full-service growth partner handling marketing, branding, software development, and go-to-market strategy end to end.",
+    "Fudo Greentech is a full-service growth partner handling software development, branding, marketing, and go-to-market strategy end to end.",
   email: "team@thefudoway.com",
   phone: "+2348159184394",
   phoneDisplay: "+234 815 918 4394",

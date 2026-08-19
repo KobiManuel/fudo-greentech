@@ -13,7 +13,7 @@ import { services } from "@/lib/data/services";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Marketing, branding, software development, and go-to-market strategy, run as one engagement, not four separate vendors.",
+    "Software development, branding, marketing, and go-to-market strategy, run as one engagement, not four separate vendors.",
 };
 
 const serviceImages: Record<string, string> = {

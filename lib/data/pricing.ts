@@ -25,10 +25,10 @@ export const pricingTiers: PricingTier[] = [
     name: "Grove",
     price: "$3,900",
     period: "/month",
-    description: "Full-service marketing and brand support for teams ready to compound growth.",
+    description: "Full-service branding and marketing support for teams ready to compound growth.",
     featured: true,
     features: [
-      "Marketing + branding tracks",
+      "Branding + marketing tracks",
       "Dedicated pod (strategist, designer, media buyer)",
       "Bi-weekly strategy sprints",
       "Quarterly brand & funnel audits",
@@ -39,7 +39,7 @@ export const pricingTiers: PricingTier[] = [
     name: "Canopy",
     price: "Custom",
     period: "engagement",
-    description: "End-to-end partner across marketing, brand, product, and go-to-market.",
+    description: "End-to-end partner across software, brand, marketing, and go-to-market.",
     features: [
       "All four service tracks",
       "Embedded pod incl. engineering",

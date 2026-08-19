@@ -8,9 +8,9 @@ import { Button } from "../ui/Button";
 const FORMSPREE_ID = "xjybvwab";
 
 const services = [
-  "Marketing",
-  "Branding",
   "Software Development",
+  "Branding",
+  "Marketing",
   "Go-to-Market Strategy",
   "Not sure yet",
 ];

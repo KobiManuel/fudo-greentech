@@ -7,11 +7,11 @@ import { PageHero } from "@/components/sections/PageHero";
 import { Stats } from "@/components/sections/Stats";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description:
-    "Fudo Greentech is a full-service growth partner handling marketing, branding, software development, and go-to-market strategy end to end.",
+  description: siteConfig.description,
 };
 
 const values = [
@@ -73,7 +73,7 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Our Story"
               title="Founded on a simple frustration."
-              description="Nine years ago, our founders were freelancers passed between a marketing agency, a branding studio, and a dev shop on the same client project, watching each one solve for their own deliverable instead of the client's outcome. Fudo Greentech exists to close that gap: one team accountable for the whole growth stack, from the first line of brand strategy to the code that ships it."
+              description="Nine years ago, our founders were freelancers passed between a dev shop, a branding studio, and a marketing agency on the same client project, watching each one solve for their own deliverable instead of the client's outcome. Fudo Greentech exists to close that gap: one team accountable for the whole growth stack, from the first line of code to the brand strategy that shapes it."
             />
           </div>
         </Container>

@@ -17,7 +17,7 @@ export function Hero() {
     <section className="relative overflow-hidden pt-12 pb-8 sm:pt-16">
       <Container className="relative flex flex-col items-center text-center">
         <Reveal>
-          <Eyebrow>Marketing · Branding · Software · Go-to-Market</Eyebrow>
+          <Eyebrow>Software · Branding · Marketing · Go-to-Market</Eyebrow>
         </Reveal>
 
         <Reveal delay={0.08} className="mt-5">

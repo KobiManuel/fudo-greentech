@@ -66,7 +66,7 @@ function bannerSvg(w, h) {
       letter-spacing="${taglineSize * 0.25}"
       fill="${CREAM}"
       fill-opacity="0.6"
-    >MARKETING · BRANDING · SOFTWARE · GO-TO-MARKET</text>
+    >SOFTWARE · BRANDING · MARKETING · GO-TO-MARKET</text>
   </svg>`;
 }
 

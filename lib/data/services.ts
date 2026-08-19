@@ -10,19 +10,19 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "marketing",
-    name: "Marketing",
-    shortName: "Marketing",
-    tagline: "Demand that compounds",
+    slug: "software-development",
+    name: "Software Development",
+    shortName: "Software",
+    tagline: "Products built to ship",
     description:
-      "SEO, paid media, content, and lifecycle marketing built to compound instead of resetting to zero every quarter.",
+      "Web platforms, product engineering, and internal tooling built by people who also have to maintain it.",
     deliverables: [
-      "SEO & organic content engines",
-      "Paid social & search media buying",
-      "Email & lifecycle marketing",
-      "Analytics & attribution setup",
+      "Marketing sites & web platforms",
+      "Product & app engineering",
+      "Design systems & component libraries",
+      "Performance & infrastructure audits",
     ],
-    icon: "marketing",
+    icon: "software",
   },
   {
     slug: "branding",
@@ -40,19 +40,19 @@ export const services: Service[] = [
     icon: "branding",
   },
   {
-    slug: "software-development",
-    name: "Software Development",
-    shortName: "Software",
-    tagline: "Products built to ship",
+    slug: "marketing",
+    name: "Marketing",
+    shortName: "Marketing",
+    tagline: "Demand that compounds",
     description:
-      "Web platforms, product engineering, and internal tooling built by people who also have to maintain it.",
+      "SEO, paid media, content, and lifecycle marketing built to compound instead of resetting to zero every quarter.",
     deliverables: [
-      "Marketing sites & web platforms",
-      "Product & app engineering",
-      "Design systems & component libraries",
-      "Performance & infrastructure audits",
+      "SEO & organic content engines",
+      "Paid social & search media buying",
+      "Email & lifecycle marketing",
+      "Analytics & attribution setup",
     ],
-    icon: "software",
+    icon: "marketing",
   },
   {
     slug: "go-to-market",

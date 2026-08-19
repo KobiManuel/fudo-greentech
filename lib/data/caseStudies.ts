@@ -1,8 +1,15 @@
+export type CaseStudyCategory =
+  | "software-development"
+  | "branding"
+  | "marketing"
+  | "go-to-market";
+
 export type CaseStudy = {
   slug: string;
   name: string;
   industry: string;
   service: string;
+  category: CaseStudyCategory;
   year: string;
   image: string;
   hoverImage: string;
@@ -22,6 +29,7 @@ export const caseStudies: CaseStudy[] = [
     name: "NAYA",
     industry: "Beauty & Skincare",
     service: SERVICE_TAG,
+    category: "software-development",
     year: "2025",
     image: "/images/brands/naya-primary.jpg",
     hoverImage: "/images/brands/naya-secondary.jpg",
@@ -47,6 +55,7 @@ export const caseStudies: CaseStudy[] = [
     name: "Intwit",
     industry: "Dating App",
     service: SERVICE_TAG,
+    category: "software-development",
     year: "2025",
     image: "/images/brands/intwit-primary.jpg",
     hoverImage: "/images/brands/intwit-secondary.jpg",
@@ -72,6 +81,7 @@ export const caseStudies: CaseStudy[] = [
     name: "Play More Football Academy",
     industry: "Youth Sports",
     service: SERVICE_TAG,
+    category: "software-development",
     year: "2024",
     image: "/images/brands/pmf-primary.jpg",
     hoverImage: "/images/brands/pmf-secondary.jpg",
@@ -97,6 +107,7 @@ export const caseStudies: CaseStudy[] = [
     name: "Afrocarb",
     industry: "Climate Fintech",
     service: SERVICE_TAG,
+    category: "marketing",
     year: "2025",
     image: "/images/brands/afrocarb-primary.jpg",
     hoverImage: "/images/brands/afrocarb-secondary.jpg",

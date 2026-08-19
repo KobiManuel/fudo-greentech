@@ -2,17 +2,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { Container } from "../ui/Container";
 import { navLinks } from "@/lib/data/misc";
+import { services } from "@/lib/data/services";
 import { siteConfig } from "@/lib/site";
 
 const columns = [
   {
     title: "Services",
-    links: [
-      { label: "Marketing", href: "/services#marketing" },
-      { label: "Branding", href: "/services#branding" },
-      { label: "Software Development", href: "/services#software-development" },
-      { label: "Go-to-Market Strategy", href: "/services#go-to-market" },
-    ],
+    // Order follows lib/data/services.ts (software first) so this list
+    // never drifts out of sync with the rest of the site.
+    links: services.map((s) => ({
+      label: s.name,
+      href: `/services#${s.slug}`,
+    })),
   },
   {
     title: "Company",
@@ -68,8 +69,8 @@ export function Footer() {
               </span>
             </Link>
             <p className="max-w-xs text-sm leading-relaxed text-cream/60">
-              A full-service growth partner handling marketing, branding,
-              software development, and go-to-market strategy end to end.
+              A full-service growth partner handling software development,
+              branding, marketing, and go-to-market strategy end to end.
             </p>
             <div className="flex gap-3">
               {socials.map((s) => (
