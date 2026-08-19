@@ -3,7 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { EmailButton } from "@/components/ui/EmailButton";
 import { siteConfig } from "@/lib/site";
 
 const inter = Inter({
@@ -79,7 +79,7 @@ const jsonLd = {
     addressRegion: "Victoria Garden City",
     addressCountry: "NG",
   },
-  sameAs: Object.values(siteConfig.social),
+  sameAs: [...Object.values(siteConfig.social), siteConfig.vercelUrl],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -98,7 +98,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
-        <WhatsAppButton />
+        <EmailButton />
       </body>
     </html>
   );

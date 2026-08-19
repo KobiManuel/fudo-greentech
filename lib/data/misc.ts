@@ -1,12 +1,11 @@
 export const clientLogos: string[] = [
-  "Rootwell",
-  "Loopwire",
-  "Norwood & Co.",
-  "Ikaru Botanics",
-  "Prisma Analytics",
-  "Waveform Audio",
-  "Monolith Studio",
-  "Bloomly",
+  "Afrocarb",
+  "Oyana Health",
+  "Farmazone",
+  "VitroWire",
+  "NAYA",
+  "Intwit",
+  "Play More Football Academy",
 ];
 
 export const stats: { label: string; value: string }[] = [

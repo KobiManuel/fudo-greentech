@@ -153,7 +153,15 @@ export default async function CaseStudyPage({
                       src={r.image}
                       alt={r.imageAlt}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="object-cover transition-all duration-500 group-hover:scale-105 group-hover:opacity-0"
+                      sizes="(min-width: 640px) 500px, 100vw"
+                    />
+                    <Image
+                      src={r.hoverImage}
+                      alt=""
+                      aria-hidden
+                      fill
+                      className="object-cover opacity-0 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100"
                       sizes="(min-width: 640px) 500px, 100vw"
                     />
                   </div>

@@ -3,40 +3,35 @@ export type Testimonial = {
   role: string;
   company: string;
   quote: string;
-  image: string;
 };
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Amara Chen",
-    role: "Co-Founder",
-    company: "Rootwell",
-    quote:
-      "Fudo didn't just hand us a strategy deck and disappear. They sat inside our funnel, found where we were bleeding traffic, and fixed it. We out-rank competitors ten times our size now.",
-    image: "/images/crops/video-quote-thumb.jpg",
-  },
-  {
-    name: "David Osei",
-    role: "Head of Growth",
-    company: "Bloomly",
-    quote:
-      "We had six months to build a brand, an app, and a launch plan at the same time. Fudo ran all three like it was one project, not three vendors fighting for priority.",
-    image: "/images/crops/founder-portrait.jpg",
-  },
-  {
-    name: "Marcus Bell",
-    role: "COO",
-    company: "Norwood & Co.",
-    quote:
-      "Rebranding a 100-year-old bank is not a small ask. They kept what our long-time customers trusted and made it feel inevitable to everyone under 35.",
-    image: "/images/crops/blob-orange-man.jpg",
-  },
-  {
-    name: "Lena Voss",
+    name: "Susan Eze",
     role: "Founder",
-    company: "Ikaru Botanics",
+    company: "NAYA",
     quote:
-      "Every other agency wanted to run our ads. Fudo asked why our repeat purchase rate was low first. That question changed the whole engagement, and the P&L.",
-    image: "/images/crops/orange-portrait.jpg",
+      "Fudo didn't just design a logo. They rebuilt our packaging, our bags, and our storefront around one consistent story. The product finally looks as good as it feels.",
+  },
+  {
+    name: "Tolu Fatoberu",
+    role: "Co-Founder",
+    company: "Intwit",
+    quote:
+      "We had a working app and no brand voice. Fudo gave us the doodle system, the tone, and the merch in one sprint, not three separate handoffs.",
+  },
+  {
+    name: "Lawrence Okonji",
+    role: "Program Director",
+    company: "Play More Football Academy",
+    quote:
+      "Parents register their kids based on trust. The new crest and site made us look like the established program we actually are, not a weekend side project.",
+  },
+  {
+    name: "Emmanuel Wanja",
+    role: "Founder",
+    company: "Afrocarb",
+    quote:
+      "Every other partner wanted to talk about our registry integrations. Fudo asked how a first-time buyer would actually understand a carbon credit. That question shaped the whole product.",
   },
 ];

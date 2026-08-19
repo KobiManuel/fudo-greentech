@@ -49,7 +49,15 @@ export function CaseStudiesGrid({
                     src={cs.image}
                     alt={cs.imageAlt}
                     fill
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
+                    className="object-cover transition-all duration-500 ease-out group-hover:scale-[1.05] group-hover:opacity-0"
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                  />
+                  <Image
+                    src={cs.hoverImage}
+                    alt=""
+                    aria-hidden
+                    fill
+                    className="object-cover opacity-0 transition-all duration-500 ease-out group-hover:scale-[1.05] group-hover:opacity-100"
                     sizes="(min-width: 640px) 50vw, 100vw"
                   />
                 </div>

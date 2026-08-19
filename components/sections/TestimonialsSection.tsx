@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
 import clsx from "clsx";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
+import { Avatar } from "../ui/Avatar";
 import { testimonials } from "@/lib/data/testimonials";
 
 const backLayers = [
@@ -70,9 +70,7 @@ export function TestimonialsSection() {
                 {active.quote}
               </p>
               <div className="flex items-center gap-3">
-                <div className="relative h-11 w-11 overflow-hidden rounded-full">
-                  <Image src={active.image} alt={active.name} fill className="object-cover" />
-                </div>
+                <Avatar name={active.name} className="h-11 w-11" />
                 <div>
                   <p className="text-sm font-semibold">{active.name}</p>
                   <p className="text-xs text-ink/50">

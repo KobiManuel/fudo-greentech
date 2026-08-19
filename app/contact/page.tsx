@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Tag";
 import { Reveal } from "@/components/ui/Reveal";
 import { ContactForm } from "@/components/sections/ContactForm";
+import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -12,9 +13,9 @@ export const metadata: Metadata = {
 };
 
 const contactPoints = [
-  { label: "Email", value: "hello@fudogreentech.com", href: "mailto:hello@fudogreentech.com" },
-  { label: "Phone", value: "+234 901 184 0361", href: "tel:+2349011840361" },
-  { label: "Studio", value: "Victoria Garden City, Lagos, Nigeria", href: "#" },
+  { label: "Email", value: siteConfig.email, href: `mailto:${siteConfig.email}` },
+  { label: "Phone", value: siteConfig.phoneDisplay, href: `tel:${siteConfig.phone}` },
+  { label: "Studio", value: siteConfig.address, href: "#" },
 ];
 
 export default function ContactPage() {

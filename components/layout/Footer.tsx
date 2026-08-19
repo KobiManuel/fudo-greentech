@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Container } from "../ui/Container";
 import { navLinks } from "@/lib/data/misc";
+import { siteConfig } from "@/lib/site";
 
 const columns = [
   {
@@ -26,8 +27,8 @@ const columns = [
     title: "Get in touch",
     links: [
       { label: "Contact", href: "/contact" },
-      { label: "hello@fudogreentech.com", href: "mailto:hello@fudogreentech.com" },
-      { label: "+234 901 184 0361", href: "tel:+2349011840361" },
+      { label: siteConfig.email, href: `mailto:${siteConfig.email}` },
+      { label: siteConfig.phoneDisplay, href: `tel:${siteConfig.phone}` },
     ],
   },
 ];

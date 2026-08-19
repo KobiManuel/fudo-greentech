@@ -5,6 +5,7 @@ export type CaseStudy = {
   service: string;
   year: string;
   image: string;
+  hoverImage: string;
   imageAlt: string;
   tint: "green" | "lime" | "dark" | "cream";
   excerpt: string;
@@ -13,197 +14,107 @@ export type CaseStudy = {
   results: { label: string; value: string }[];
 };
 
+const SERVICE_TAG = "Brand Identity & Software Development";
+
 export const caseStudies: CaseStudy[] = [
   {
-    slug: "cointash",
-    name: "Cointash",
-    industry: "Fintech",
-    service: "Brand Identity",
-    year: "2023",
-    image: "/images/perfect-crops/2706.png",
-    imageAlt: "Cointash signage and brand mark on a concrete storefront",
-    tint: "dark",
-    excerpt:
-      "A payments startup rebranding ahead of a Series A, moving from generic fintech blue to a mark investors remembered.",
-    challenge:
-      "Cointash's original identity was indistinguishable from a dozen other payment apps. The founders needed a system that could carry them from pitch deck to billboard.",
-    approach: [
-      "Designed a modular wordmark and diamond glyph that scales from favicon to signage",
-      "Built a motion identity system for product demos and investor decks",
-      "Delivered a full brand guideline shipped to their agency roster in 3 weeks",
-    ],
-    results: [
-      { label: "Brand recall lift", value: "+64%" },
-      { label: "Deck-to-meeting rate", value: "+41%" },
-      { label: "Delivery time", value: "3 weeks" },
-    ],
-  },
-  {
-    slug: "hempto",
-    name: "Hempto",
-    industry: "Eco-Wellness",
-    service: "SEO & Content",
-    year: "2024",
-    image: "/images/perfect-crops/2707.png",
-    imageAlt: "Hempto tote bag product photography",
-    tint: "green",
-    excerpt:
-      "A plant-based wellness label that needed to out-rank category giants without a paid media budget.",
-    challenge:
-      "Hempto launched with a beautiful product line and almost no organic visibility. Search traffic was flat, and every competitor with a bigger budget outranked them on the terms that mattered.",
-    approach: [
-      "Rebuilt the site's information architecture around buyer intent, not product SKUs",
-      "Shipped a 40-article content engine covering ingredient science and sourcing transparency",
-      "Landed backlinks from wellness press through a founder-led PR sprint",
-    ],
-    results: [
-      { label: "Organic traffic", value: "+312%" },
-      { label: "Page 1 keywords", value: "184" },
-      { label: "Time to ROI", value: "5 months" },
-    ],
-  },
-  {
-    slug: "tandore-bank",
-    name: "Tandore Bank",
-    industry: "Banking",
-    service: "Brand Identity",
-    year: "2023",
-    image: "/images/perfect-crops/2708.png",
-    imageAlt: "Tandore Bank business card and stationery system",
+    slug: "naya",
+    name: "NAYA",
+    industry: "Beauty & Skincare",
+    service: SERVICE_TAG,
+    year: "2025",
+    image: "/images/brands/naya-primary.jpg",
+    hoverImage: "/images/brands/naya-secondary.jpg",
+    imageAlt: "NAYA botanical skincare product and packaging photography",
     tint: "cream",
     excerpt:
-      "A century-old regional bank needed a visual identity that felt trustworthy to retirees and relevant to first-time savers.",
+      "A botanical skincare label that needed a mark and a storefront as refined as the product inside the jar.",
     challenge:
-      "Tandore's brand hadn't changed since 1994. Younger customers assumed it was a legacy institution not built for them, while the bank couldn't afford to alienate its core base.",
+      "NAYA had a genuinely premium formula, but early packaging and web presence read closer to a farmers-market stall than a shelf-ready beauty brand.",
     approach: [
-      "Kept the pine-tree mark rooted in heritage, redrew it for a modern, flat system",
-      "Introduced a two-tone palette that works across print, branch signage, and app",
-      "Piloted the new identity in 6 branches before a full rollout",
+      "Designed a gold interlocking wordmark and a 'Radiance. Refined. Real.' positioning line",
+      "Built out packaging, bags, and print collateral around a warm, botanical palette",
+      "Shipped an e-commerce storefront built to convert on product photography, not discounts",
     ],
     results: [
-      { label: "New account signups", value: "+28%" },
-      { label: "App store rating", value: "4.8 / 5" },
-      { label: "Branches rebranded", value: "42" },
+      { label: "Brand perception lift", value: "+58%" },
+      { label: "Store conversion rate", value: "+34%" },
+      { label: "Time to launch", value: "8 weeks" },
     ],
   },
   {
-    slug: "ikkari",
-    name: "Ikkari",
-    industry: "Skincare",
-    service: "Media Marketing",
-    year: "2024",
-    image: "/images/perfect-crops/2709.png",
-    imageAlt: "Ikkari skincare product line studio photography",
-    tint: "cream",
-    excerpt:
-      "A clean-beauty skincare line ready to scale past its founder's personal Instagram following.",
-    challenge:
-      "Ikkari had a loyal cult following but no repeatable media engine. Every spike in sales traced back to one founder post, with nothing to sustain it in between.",
-    approach: [
-      "Built an always-on paid social engine tuned to skincare-specific creative formats",
-      "Partnered with 30 micro-creators for authentic before/after content",
-      "Layered retargeting across email, SMS, and paid to lift repeat purchase rate",
-    ],
-    results: [
-      { label: "Revenue growth", value: "+215%" },
-      { label: "Creator partners", value: "30" },
-      { label: "Repeat purchase rate", value: "+38%" },
-    ],
-  },
-  {
-    slug: "prisma-analytics",
-    name: "Prisma Analytics",
-    industry: "SaaS / Data",
-    service: "Product Engineering",
-    year: "2024",
-    image: "/images/perfect-crops/2703.png",
-    imageAlt: "Prisma Analytics abstract dashboard visualization render",
-    tint: "dark",
-    excerpt:
-      "A data-visualization startup whose prototype couldn't survive contact with enterprise-scale datasets.",
-    challenge:
-      "Prisma's demo impressed investors, but the underlying architecture buckled under real customer data volumes. Every pilot risked becoming a churn story.",
-    approach: [
-      "Re-platformed the rendering engine for streaming, million-row datasets",
-      "Shipped a component library so the product team could ship features solo",
-      "Instrumented the app end to end for performance budgets, not just uptime",
-    ],
-    results: [
-      { label: "Dashboard load time", value: "-78%" },
-      { label: "Enterprise pilots closed", value: "12" },
-      { label: "Engineering velocity", value: "+2.4x" },
-    ],
-  },
-  {
-    slug: "waveform-audio",
-    name: "Waveform Audio",
-    industry: "Consumer Tech",
-    service: "Go-to-Market Strategy",
-    year: "2023",
-    image: "/images/perfect-crops/2704.png",
-    imageAlt: "Waveform Audio abstract sound wave visualization",
-    tint: "dark",
-    excerpt:
-      "A spatial-audio hardware startup with a brilliant product and a launch date, but no channel strategy.",
-    challenge:
-      "Waveform had built something genuinely new, but 'spatial audio' meant nothing to a cold audience, and their launch window was closing fast.",
-    approach: [
-      "Mapped a three-tier GTM plan across DTC, retail, and creator seeding",
-      "Repositioned the product around a single, provable claim: 'hear the room'",
-      "Ran a 6-week pre-launch waitlist campaign ahead of the retail push",
-    ],
-    results: [
-      { label: "Waitlist signups", value: "26,400" },
-      { label: "Sell-through, week 1", value: "94%" },
-      { label: "Retail doors at launch", value: "310" },
-    ],
-  },
-  {
-    slug: "monolith-studio",
-    name: "Monolith Studio",
-    industry: "Architecture & Design",
-    service: "Brand & Web Platform",
-    year: "2022",
-    image: "/images/crops/metallic-cube-podium.jpg",
-    imageAlt: "Monolith Studio minimalist product render",
-    tint: "cream",
-    excerpt:
-      "An architecture studio whose portfolio site undersold the ambition of its built work.",
-    challenge:
-      "Monolith's projects were winning awards, but their website looked like a template. Prospective clients judged the studio's ambition by its weakest asset.",
-    approach: [
-      "Designed an editorial-grade site built around full-bleed project photography",
-      "Built a lightweight CMS so the studio's team could publish new work same-day",
-      "Paired the launch with a print monograph mailed to top-tier prospects",
-    ],
-    results: [
-      { label: "Qualified inbound leads", value: "+96%" },
-      { label: "Avg. session time", value: "4m 12s" },
-      { label: "Press features", value: "9" },
-    ],
-  },
-  {
-    slug: "bloomly",
-    name: "Bloomly",
-    industry: "Social Growth App",
-    service: "Full-Service Launch",
-    year: "2024",
-    image: "/images/crops/blob-green-phone.jpg",
-    imageAlt: "Bloomly app user photographed against a mint backdrop",
+    slug: "intwit",
+    name: "Intwit",
+    industry: "Dating App",
+    service: SERVICE_TAG,
+    year: "2025",
+    image: "/images/brands/intwit-primary.jpg",
+    hoverImage: "/images/brands/intwit-secondary.jpg",
+    imageAlt: "Intwit dating app brand identity and merchandise photography",
     tint: "lime",
     excerpt:
-      "A social growth app that needed brand, product, and go-to-market built in parallel on a six-month runway.",
+      "A dating app for singles that needed to feel warm and playful in a category dominated by cold, swipe-first UI.",
     challenge:
-      "Bloomly's founders had funding and a launch deadline, but no brand, no app shell, and no channel plan. Everything had to move in parallel, not sequence.",
+      "Intwit's product was ready, but every early brand direction looked like a generic dating app template. Nothing signaled the lighter, more human tone the founders wanted.",
     approach: [
-      "Ran brand, product design, and engineering as one embedded pod",
-      "Designed the onboarding flow around a single 'first win' moment",
-      "Seeded launch through 40 creator partnerships timed to app store release",
+      "Designed a hand-drawn doodle system and a friendly wordmark that scales from app icon to merch",
+      "Built the onboarding and matching flow around approachable, low-pressure interactions",
+      "Extended the identity across launch merch and social content templates",
     ],
     results: [
-      { label: "Day-1 downloads", value: "18,000+" },
-      { label: "D7 retention", value: "47%" },
-      { label: "Time to launch", value: "6 months" },
+      { label: "App store rating", value: "4.7 / 5" },
+      { label: "Onboarding completion", value: "+41%" },
+      { label: "Waitlist to signup", value: "62%" },
+    ],
+  },
+  {
+    slug: "play-more-football-academy",
+    name: "Play More Football Academy",
+    industry: "Youth Sports",
+    service: SERVICE_TAG,
+    year: "2024",
+    image: "/images/brands/pmf-primary.jpg",
+    hoverImage: "/images/brands/pmf-secondary.jpg",
+    imageAlt: "Play More Football Academy brand identity and team kit photography",
+    tint: "dark",
+    excerpt:
+      "A youth football academy that needed a crest and a program identity parents would trust with their kids.",
+    challenge:
+      "PMF's coaching program was strong, but with no consistent brand, registration pages and kit orders looked improvised season to season.",
+    approach: [
+      "Designed the PMF crest and a black-and-gold kit system built to hold up on and off the pitch",
+      "Wrote the 'Developing Players. Building Character. Creating Opportunities.' program pillars",
+      "Built a registration site and booking flow parents could trust with one click",
+    ],
+    results: [
+      { label: "Season enrollment", value: "+72%" },
+      { label: "Kit & merch orders", value: "+3.1x" },
+      { label: "Program launch", value: "2024" },
+    ],
+  },
+  {
+    slug: "afrocarb",
+    name: "Afrocarb",
+    industry: "Climate Fintech",
+    service: SERVICE_TAG,
+    year: "2025",
+    image: "/images/brands/afrocarb-primary.jpg",
+    hoverImage: "/images/brands/afrocarb-secondary.jpg",
+    imageAlt: "Afrocarb climate fintech brand identity and merchandise photography",
+    tint: "green",
+    excerpt:
+      "A carbon credit marketplace that needed to make climate finance feel legible to a first-time buyer.",
+    challenge:
+      "Afrocarb's marketplace let businesses offset emissions in a few clicks, but the brand and product language still read like a spreadsheet built for carbon auditors, not a first-time buyer.",
+    approach: [
+      "Designed a three-mark identity system representing origin, verification, and offset",
+      "Built the live marketplace UI around plain-language listings instead of registry jargon",
+      "Shipped onboarding content that explains carbon credits in under two minutes",
+    ],
+    results: [
+      { label: "Marketplace signups", value: "+164%" },
+      { label: "Checkout completion", value: "+47%" },
+      { label: "Credits listed at launch", value: "12,000+" },
     ],
   },
 ];
